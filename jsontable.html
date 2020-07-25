@@ -11,9 +11,9 @@
 
 <table class="table table-striped">
     <tr  class="bg-info">
-        <th>Name</th>
-        <th>Age</th>
-        <th>Birthday</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
     </tr>
 
     <tbody id="myTable">
@@ -31,6 +31,7 @@
 		url:'https://reqres.in/api/users',
 		success:function(response){
 			myArray = response.data
+			buildTable(myArray)
 			console.log(myArray)
 		}
 	})
