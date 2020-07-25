@@ -8,12 +8,19 @@
             }
 </style>
 
+<div class="row">
+	<div class="col">
+		<div class="card card-body">
+			<input id="search-input" class="form-control" type="text">
+		</div>
+	</div>
+</div>
 
 <table class="table table-striped">
     <tr  class="bg-info">
-        <th>First</th>
-		<th>Last</th>
-        <th>Email</th>
+        <th class="bg-info" data-colname="name" data-order="desc">Name</th>
+		<th data-colname="age" data-order="desc">Age</th>
+        <th data-colname="birthdate" data-order="desc">Birthday</th>
     </tr>
 
     <tbody id="myTable">
