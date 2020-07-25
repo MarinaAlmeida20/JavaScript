@@ -33,6 +33,13 @@
 	
 	buildTable(myArray)
 
+	$.ajax({
+		method: 'GET'
+		url:'https://reqres.in/api/users',
+		success:function(response){
+			console.log(response)
+		}
+	})
 
 
 	function buildTable(data){
